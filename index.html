@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For athena</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #d4af37;
+        }
+
+        h2 {
+            margin-top: 60px;
+            font-size: 2em;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .filme {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .filme:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .filme img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .filme a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: 20px 10px 10px;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ta simples mais e isso</h2>
+
+<h2>Filmes escolhidos por mim</h2>
+        
+        <div class="grid">
+            <!-- Filme 1 -->
+            <div class="filme">
+                <a href="https://www.pobreflix.sarl/filmes/matrix/" target="_blank">
+                    <img src="https://image.tmdb.org/t/p/w500/etJHvVsM9aefWWrW23r5BXgVK1F.jpg" alt="Matrix">
+                    <div class="titulo">Matrix</div>
+                </a>
+            </div>
+
+            <!-- Filme 2 -->
+            <div class="filme">
+                <a href="https://www.imdb.com" target="_blank">
+                    <img src="https://images.pluto.tv/series/60c8f203e301960013db434a/tile_1769717179082.jpg?fill=blur&fit=fill&fm=jpg&auto=&ixlib=react-9.1.5&q=75&w=200&h=200&dpr=1"
+                     alt="South Park(nao e filme mais acho bom)">
+                    <div class="titulo">South Park</div>
+                </a>
+            </div>
+
+            <!-- Filme 3 -->
+            <div class="filme">
+                <a href="https://www.pobreflix.sarl/filmes/todo-mundo-em-panico/" target="_blank">
+                    <img src="https://image.tmdb.org/t/p/w500/qqOcBboLed2U0zHgiKZYNTvU2lv.jpg" alt="Todo mundo em panico">
+                    <div class="titulo">Todo mundo em panico</div>
+                </a>
+            </div>
+
+            <!-- Filme 4 -->
+            <div class="filme">
+                <a href="https://www.pobreflix.sarl/filmes/interestelar/" target="_blank">
+                    <img src="https://image.tmdb.org/t/p/w500/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="Avatar">
+                    <div class="titulo">Interestelar</div>
+                </a>
+            </div>
+
+            <!-- Filme 5 -->
+            <div class="filme">
+                <a href="https://www.pobreflix.sarl/filmes/clube-da-luta/" target="_blank">
+                    <img src="https://image.tmdb.org/t/p/w500/ohXr0v9U0TfFu9IXbSDm5zoGV3R.jpg"
+                     alt="isso memo o filme e bom e e isso ai">
+                    <div class="titulo">Clube da luta</div>
+                </a>
+            </div>
+
+            <!-- Filme 6 -->
+            <div class="filme">
+                <a href="https://www.pobreflix.sarl/filmes/todo-poderoso/" target="_blank">
+                    <img src="https://image.tmdb.org/t/p/w500/wcA8udbEqqU5tPzsyqyZCDX6OwI.jpg" alt="O todo poderoso">
+                    <div class="titulo">O todo poderoso</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <h1>Sites</h1>
+        
+        <div class="grid">
+            <!-- site 1 -->
+            <div class="filme">
+                <a href="https://www.netmovies.com.br/" target="_blank">
+                    <img src="https://imgs.search.brave.com/Z4HCacDPscC6tazfZOfCwue60Qgh-avXj25E-LGRKyo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9jb25lY3Rh/ZG8uY29tLmJyL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA2/LzIzXzA2XzE0XzE1/NDQ0NS5qcGc"
+                     alt="NetMovies">
+                    <div class="titulo">Net Movies</div>
+                </a>
+            </div>
+
+            <!-- site 2 -->
+            <div class="filme">
+                <a href="https://pluto.tv/br/on-demand?lang=pt" target="_blank">
+                    <img src="https://imgs.search.brave.com/vul-AQc4qMczbdzQ8Sd3-QZ0fxUS7J-Ri50RbtTNkPA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/b2RjZG4uY29tLmJy/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzEyLzIwMjAxMTE5/MDM0NjU2LmpwZw"
+                     alt="PlutoTV">
+                    <div class="titulo">Pluto TV</div>
+                </a>
+            </div>
+
+            <!-- site 3 -->
+            <div class="filme">
+                <a href="http://pobreflix.sarl/" target="_blank">
+                    <img src="https://www.pobreflix.sarl/wp-content/uploads/2026/01/pobreflixlife.png"
+                     alt="PobreFlix1">
+                    <div class="titulo">Pobreflix 1 (acho um pouco melhor)</div>
+                </a>
+            </div>
+
+            <!-- site 4 -->
+            <div class="filme">
+                <a href="https://www.pobreflixtv.hair/" target="_blank">
+                    <img src="https://imgs.search.brave.com/BifoWIJgbWBCUxlSR4opQGhi4rkY6RJ7LRkQPf1v41w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Z0Y2RuLm5l/dC9pbWFnZXMvdF9h/cHAtY292ZXItcyxm/X2F1dG8vcC9iY2Y1/MmZmNy0yZWQzLTRi/YTQtOGQ5YS1mNGNl/NzYzYzY3MzgvMTI5/MDM5OTYyNi9wb2Jy/ZWZsaXgtZnVsbC1o/ZC1tb3ZpZXMtc2Ny/ZWVuc2hvdA"
+                     alt="Pobreflix2">
+                    <div class="titulo">Pobreflix 2</div>
+                </a>
+            </div>
+
+            <!-- site 5 -->
+            <div class="filme">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="https://imgs.search.brave.com/cWemaTaS7Sj3DXHQc-KlCjgb8aBiI63CwdHeoVpDXTY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzhkL2Zj/L2U1LzhkZmNlNTA3/MWMwYjI5NzJhNGU0/ZTFmYTFhYmQ2MTBm/LmpwZw"
+                     alt="youtube">
+                    <div class="titulo">youtube</div>
+                </a>
+            </div>
+
+            <!-- site 6 -->
+            <div class="filme">
+                <a href="" target="_blank">
+                    <img src="" alt="isso aq foi facil de colocar dificil e tirar(to com preguica de tirar)">
+                    <div class="titulo">finge que isso nao existe</div>
+                </a>
+            </div>
+        </div>
+
+        
+    <h1>nota final</h1>
+    <p>Xande conhecido por XAND30 tem netflix se quiser vim ver com ele ¯\_( ͡❛ ͜ʖ ͡❛)_/¯<br>o cara fez ate um site<br>o homem e diferenciado mesmo</p>
+    <h3>Criadores:XAND30 e XD30sky</h3>
+</body>
+</html>
